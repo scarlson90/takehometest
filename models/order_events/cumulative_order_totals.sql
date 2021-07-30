@@ -1,4 +1,4 @@
-select date_trunc('month',created_date) as created_month,
+select date_trunc('month',DATE_CREATED) as created_month,
         count(distinct order_id) as total_monthly_orders,
         count(distinct customer_id) as unique_customers,
         sum(revenue) OVER (ORDER BY date_trunc('month',created_date)) as cumulative_monthly_revenue
