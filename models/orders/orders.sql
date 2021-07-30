@@ -1,5 +1,6 @@
 select ORDER_ID
       ,ORDER_ITEM_ID
+      ,QUANTITY
       ,DATE_CREATED
       ,IN_PRODUCTION_DATE
       ,SHIP_DATE

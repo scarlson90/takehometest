@@ -36,3 +36,9 @@ models:
       # Applies to all files under models/example/
       example:
           materialized: view
+
+      orders:
+          materialized: table
+
+      order_events:
+          materialized: table
