@@ -3,10 +3,10 @@ select cast(PARTNER_ID as int) as PARTNER_ID
       ,cast(ORDER_ITEM_ID as int) as ORDER_ITEM_ID
       ,cast(VENDOR_ID as int) as VENDOR_ID
       ,VENDOR_NAME
-      ,DATE_CREATED
-      ,IN_PRODUCTION_DATE
-      ,SHIP_DATE
-      ,DELIVERED_DATE
+      ,cast(DATE_CREATED as datetime) as DATE_CREATED
+      ,cast(IN_PRODUCTION_DATE as datetime) as IN_PRODUCTION_DATE
+      ,cast(SHIP_DATE as datetime) as SHIP_DATE
+      ,cast(DELIVERED_DATE as datetime) as DELIVERED_DATE
       ,SHIPPING_ADDRESS_LINE1
       ,CITY
       ,STATE

@@ -8,5 +8,7 @@ models:
           - name: order_id
             description: "The primary key for this table"
             tests:
-                - unique
                 - not_null
+      tests:
+        - unique:
+            column_name: "(order_item_id || '-' || order_id)"
